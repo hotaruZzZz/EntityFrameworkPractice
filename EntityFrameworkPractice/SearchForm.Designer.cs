@@ -92,9 +92,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(185, 260);
+            this.label3.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label3.Location = new System.Drawing.Point(187, 214);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 15);
+            this.label3.Size = new System.Drawing.Size(0, 30);
             this.label3.TabIndex = 6;
             // 
             // SearchForm

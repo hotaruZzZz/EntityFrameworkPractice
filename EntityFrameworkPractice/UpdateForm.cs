@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Entity.Core.Metadata.Edm;
+using System.Data.Entity.Migrations;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -46,11 +47,20 @@ namespace EntityFrameworkPractice
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-           
-            //DataContext db = new DataContext(@"c:\Northwind.mdf");
-
-
+            ItemsModel i = new ItemsModel();
+            var data = i.ItemTable.ToList().Where(x => x.Id == int.Parse(textBox1.Text.Trim())).First();
+            try
+            {
+                data.Name = textBox2.Text.Trim();
+                data.Quantity = int.Parse(textBox3.Text);
+                data.Price = decimal.Parse(textBox4.Text);
+                data.Type = textBox5.Text.Trim();
+                i.ItemTable.AddOrUpdate(data);
+                i.SaveChanges();
+                MessageBox.Show($"update success!");
+                ClearTextBoxes();
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
 
         }
         private void ClearTextBoxes()
