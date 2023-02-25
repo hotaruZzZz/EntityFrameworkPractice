@@ -12,6 +12,7 @@ namespace EntityFrameworkPractice.Models
             : base("name=ItemsModel")
         {
             AppDomain.CurrentDomain.SetData("DataDirectory", Directory.GetCurrentDirectory());
+
         }
 
         public virtual DbSet<ItemTable> ItemTable { get; set; }

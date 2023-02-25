@@ -25,7 +25,7 @@ namespace EntityFrameworkPractice
             var data = i.ItemTable.Find(int.Parse(textBox1.Text));
             try
             {
-                if (data == null) {
+                if (data != null) {
                     i.ItemTable.Remove(data);
                     i.SaveChanges();
                     MessageBox.Show(data.Name + " delete success!");

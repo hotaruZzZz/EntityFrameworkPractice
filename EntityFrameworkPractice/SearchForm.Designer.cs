@@ -59,18 +59,18 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(186, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 15);
+            this.label1.Size = new System.Drawing.Size(101, 15);
             this.label1.TabIndex = 2;
-            this.label1.Text = "請輸入商品ID";
+            this.label1.Text = "以商品ID查詢:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(189, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 15);
+            this.label2.Size = new System.Drawing.Size(116, 15);
             this.label2.TabIndex = 3;
-            this.label2.Text = "請輸入商品名稱";
+            this.label2.Text = "以商品名稱查詢:";
             // 
             // textBox2
             // 

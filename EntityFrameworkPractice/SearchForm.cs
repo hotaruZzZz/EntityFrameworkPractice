@@ -27,7 +27,7 @@ namespace EntityFrameworkPractice
             {
                 if (data.Any())
                 {
-                    foreach (var d in data) { label3.Text += $"ID: {d.Id}\n商品名稱: {d.Name}\n數量: {d.Quantity}個\n價錢: {d.Price:C}\n類型: {d.Type}"; }
+                    foreach (var d in data) { label3.Text = $"ID: {d.Id}\n商品名稱: {d.Name}\n數量: {d.Quantity}個\n價錢: {d.Price:C}\n類型: {d.Type}"; }
 
                 }
                 else
@@ -49,7 +49,7 @@ namespace EntityFrameworkPractice
             {
                 if (data.Any())
                 {
-                    foreach (var d in data) { label3.Text += $"ID: {d.Id}\n商品名稱: {d.Name}\n數量: {d.Quantity}個\n價錢: {d.Price:C}\n類型: {d.Type}"; }
+                    foreach (var d in data) { label3.Text = $"ID: {d.Id}\n商品名稱: {d.Name}\n數量: {d.Quantity}個\n價錢: {d.Price:C}\n類型: {d.Type}"; }
 
                 }
                 else
